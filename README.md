@@ -167,8 +167,19 @@ pull_file_task >> parse_file_task >> email_manager_task
 
 ### Examples:
 
+## Airflow *sensor*
 
+1. Operator that waits for a condition to be true:
+a. Creation of a file
+b. Upload of a file
+c. etc etc
 
+## Sensor details
+
+* `airflow.sensors.base_sensor_operator`
+* `mode` - How to check for the condition
+a. `mode = 'poke'`
+b. `mode = 'reschedule'`
 
 
 
