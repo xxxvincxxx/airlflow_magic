@@ -162,7 +162,7 @@ pull_file_task >> parse_file_task >> email_manager_task
 ### Presets:
 * `None`
 * `@hourly`
-(...)
+* (...)
 
 
 ### Examples:
