@@ -178,6 +178,7 @@ c. etc etc
 
 * `airflow.sensors.base_sensor_operator`
 * `mode` - How to check for the condition
+
 a. `mode = 'poke'`
 b. `mode = 'reschedule'`
 
