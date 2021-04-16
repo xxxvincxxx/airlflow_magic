@@ -159,13 +159,14 @@ pull_file_task >> parse_file_task >> email_manager_task
 * `cron syntax`
 --> add examples
 
-* presets:
-** `None`
-** `@hourly`
+### Presets:
+* `None`
+* `@hourly`
 (...)
 
 
-### Examples
+### Examples:
+
 
 
 
