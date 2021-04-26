@@ -144,6 +144,28 @@ email_manager_task = EmailOperator(
 pull_file_task >> parse_file_task >> email_manager_task
 ``` 
 
+## Airflow Scheduling
+
+* `start_date`
+* `end_date`
+* `max_tries`
+* `schedule_interval`
+
+## Schedule Interval
+
+* How often it runs between `start_date` and `end_date`.
+
+## Methods
+* `cron syntax`
+--> add examples
+
+* presets:
+** `None`
+** `@hourly`
+(...)
+
+
+### Examples
 
 
 
