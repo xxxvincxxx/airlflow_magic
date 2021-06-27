@@ -61,3 +61,21 @@ Pay attention to:
 1. Environmental variables
 2. Environmental credentials (i.e. DB access)
 3. User priviledges
+
+## Tasks Dependency
+
+* either >> or << as dependency
+* multiple dependency
+``` bash
+task1 >> task2 <<task3
+```
+aka:
+``` bash
+task1 >> task2
+task3 >> task2
+```
+
+
+
+
+
