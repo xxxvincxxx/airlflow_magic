@@ -51,7 +51,13 @@ airflow list_dags
 
 ``` bash
 from airflow.operators.bash_operator import BashOperator
-exampleBH = BashOperator(task_id = "aaa",
+exampleBH = BashOperator(task_id = "aaa",?
                          bash_command = "echo 1",
                          dag = dag)
 ```
+
+## Gotchas for Operators
+Pay attention to:
+1. Environmental variables
+2. Environmental credentials (i.e. DB access)
+3. User priviledges
