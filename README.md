@@ -65,11 +65,11 @@ Pay attention to:
 ## Tasks Dependency
 
 * either `>>` or `<<` as dependency
-* `>>` before
-* `<<` after
+* `>>` **before**
+* `<<` **after**
 
 ``` bash
-task1 >> task2 <<task3
+task1 >> task2 << task3
 ```
 aka:
 ``` bash
