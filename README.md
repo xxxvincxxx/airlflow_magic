@@ -31,4 +31,27 @@ etl_dag = DAG('example_etl', default_args=default_args)
 
 ```
 
-## 
+## Check how many DAGs tasks there are
+
+``` bash
+# List all possible commands
+airflow -h
+
+# List the possible dags
+airflow list_dags
+```
+
+## Airflow Operators
+ 
+* they represent tasks.
+* they run independently.
+
+## Bash operators
+* it executes a given Bash command or script
+
+``` bash
+from airflow.operators.bash_operator import BashOperator
+exampleBH = BashOperator(task_id = "aaa",
+                         bash_command = "echo 1",
+                         dag = dag)
+```
