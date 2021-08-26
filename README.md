@@ -167,7 +167,7 @@ pull_file_task >> parse_file_task >> email_manager_task
 
 ### Examples:
 
-## Airflow *sensor*
+## Airflow *sensors*
 
 1. Operator that waits for a condition to be true:
 a. Creation of a file
@@ -176,11 +176,20 @@ c. etc etc
 
 ## Sensor details
 
-* `airflow.sensors.base_sensor_operator`
+* `airflow.sensors.base_sensor_operator` class
 * `mode` - How to check for the specific condition:
 
-a. `mode = 'poke'`
-b. `mode = 'reschedule'`
+a. `mode = 'poke'` (default)
+b. `mode = 'reschedule'` (wait for the next slot to become available)
+c. `poke_interval` (how long to wait between checks)
+d. `timeout` : how long to wait before failing task
 
+## Add differences between sensors and operators
+
+## Execution Models
+* Exs run tasks !!!
+* `SequentialExecutors`
+* `LocalExecutor`
+* `CeleryExecutor`
 
 
