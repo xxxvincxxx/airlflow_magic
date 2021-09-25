@@ -65,7 +65,6 @@ Pay attention to:
 ## Tasks Dependency
 
 * either `>>` or `<<` as dependency
-* multiple dependency
 * `>>` before
 * `<<` after
 
