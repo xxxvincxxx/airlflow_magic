@@ -64,10 +64,10 @@ Pay attention to:
 
 ## Tasks Dependency
 
-* either >> or << as dependency
+* either `>>` or `<<` as dependency
 * multiple dependency
-* >> before
-* << after
+* `>>` before
+* `<<` after
 
 ``` bash
 task1 >> task2 <<task3
@@ -105,8 +105,8 @@ pull_file_task = PythonOperator(
     python_callable=pull_file,
     # Define the arguments
     op_kwargs={'URL':'http://dataserver/sales.json', 'savepath':'latestsales.json'},
-    dag=process_sales_dag
-)```
+    dag=process_sales_dag)
+```
 
 
 
