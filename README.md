@@ -188,8 +188,11 @@ d. `timeout` : how long to wait before failing task
 
 ## Execution Models
 * Exs run tasks !!!
-* `SequentialExecutors`
-* `LocalExecutor`
-* `CeleryExecutor`
+* `SequentialExecutors`: single taks a time (slow); useful for debug; not cool for production
+* `LocalExecutor`: each task as a proceess; uses parallelism defined by the user
+* `CeleryExecutor`: multiple workers per system; more difficult to set-up.
+
+
+
 
 
