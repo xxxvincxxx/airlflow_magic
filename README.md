@@ -192,6 +192,7 @@ d. `timeout` : how long to wait before failing task
 * `LocalExecutor`: each task as a proceess; uses parallelism defined by the user
 * `CeleryExecutor`: multiple workers per system; more difficult to set-up.
 
+to check, always use `airflow -h` and `airflow list_dags`
 
 
 
