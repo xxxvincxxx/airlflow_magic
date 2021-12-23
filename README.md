@@ -195,5 +195,15 @@ d. `timeout` : how long to wait before failing task
 to check, always use `airflow -h` and `airflow list_dags`
 
 
+### Debugging & Troubleshooting
+
+* DAG won't run:
+-> use `airflow scheduler`
+
+* No free slots:
+-> change executor type
+
+* DAG won't load
+-> examine the `airflow.cfg`
 
 
